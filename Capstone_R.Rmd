@@ -1,0 +1,312 @@
+---
+output:
+  word_document:
+    reference_docx: "template.docx"
+csl: american-medical-association.csl
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE,
+                      warning = FALSE)
+source("data-and-analyses.R")
+```
+
+## The Influence of Maternal Social Deprivation On Undernutrition In Children Under 5 Years In Northern And Southern Nigeria.
+
+##### Keywords: Nutrition, Social Deprivation, Nigeria, Youth
+
+##### Nkiru J. Obi, M.D, MPH$^1$\*; Jenine K. Harris, PhD$^2$ 
+
+##### $^1$Graduate, Brown School, Washington University in St. Louis, St. Louis, Missouri, United States of America
+
+##### $^2$Professor, Brown School, Washington University in St. Louis, St. Louis, Missouri, United States of America
+
+##### \*Corresponding author
+
+##### Nkiru J. Obi, M.D, MPH;Washington University in St. Louis, 1 Brookings Drive, St. Louis, Missouri; [n.obi\@wustl.edu](mailto:n.obi@wustl.edu){.email}
+
+##### Word count:
+
+##### Number of tables:
+
+##### Number of figures:
+
+###### line break
+
+## Abstract
+
+**Background and objectives:** Undernutrition is a global public health issue that has far-reaching consequences on the health and development of individuals as well as economic and social impacts on communities and countries. Middle and low-income countries like Nigeria bear the highest burdens and Nigeria has an unequal distribution of this burden between the North and South. Maternal socioeconomic factors have been implicated in the burden of undernutrition. This study examines the regional differences in these factors as key determinants of the inequalities in the distribution of the burden of undernutrition.
+
+**Methods:** A cross-sectional study using the Nigerian Demographic Health Survey (NDHS) 2018. Bivariate and multivariate logistic regression models were used to examine the association between region and undernutrition, and between maternal deprivation factors and undernutrition respectively.
+
+**Results:** The odds of being underweight, stunted or wasted were 2.80 (OR = 2.80; 95 % CI 2.53. 3.10; p \<0.001), 3.09 (OR = 3.09; 95 % CI 2.84, 3.37; p \<0.001), and 1.91 (OR = 1·91; 95 % CI 1.62, 2.28; p \<0.001) times higher respectively in children living in the North compared to children in the South. Across all 3 indices of undernutrition, the most consistent factors affecting childhood undernutrition were the mother's education (no formal education) and wealth index (poorest households).
+
+**Conclusions:** Policies and programs targeted toward the improvement of childhood undernutrition should be community-centered and focus on mitigating the inequities in maternal socioeconomic factors.
+
+## Introduction
+
+Undernutrition is one of the greatest global health problems. In 2014, 462 million people suffered from undernutrition globally.[@factshea] Undernutrition is defined as energy and nutrient intake that is insufficient for the body's needs to sustain optimal health.[@maleta2006] The indices of undernutrition include underweight (low weight for age), stunting (low height for age), and wasting (low weight for height). Undernutrition has far-reaching consequences on the health and development of individuals as well as economic and social impacts on communities and countries. It leads to increased risk of diseases, increased health care costs, reduced academic performance in children, reduced productivity in adulthood, and helps to perpetuate the cycle of poverty.[@maleta2006],[@n2019] Women, children, and adolescents are particularly susceptible to undernutrition. Globally, 149 million children under 5 years were stunted and 45 million were wasted in 2020.[@factsheb] Undernutrition is responsible for 45% of under-5 deaths with most of these deaths occurring in middle and low-income countries.[@factshec] In Nigeria, the most populous country in sub-Saharan Africa, the prevalence of stunting is 32%, making it the country with the second-highest burden of stunting globally.[@nutritio] The rate of undernutrition is unevenly distributed in Nigeria with the highest rates of stunting in Northwest Nigeria at about 57% and the lowest in the Southeast at 18%.[@thefede2019] The proportion of children who are wasted is almost two times as high in the Northeast (10%) and Northwest (9%) as in the other zones (4%-6%).[@thefede2019a] Many studies have also underscored the disparity in the prevalence of undernutrition between the Northern and Southern regions of Nigeria.[@adekanmbi2013; @akombi2017; @amare2018; @n2019a; @wariri2020] Maternal socioeconomic factors such as education, occupation, income, and rural/urban residence are associated with undernutrition.[@n2019b; @akombi2019; @owoo2020] These factors determine the level of food security, access and utilization of healthcare services, public health resources, and water and sanitation. Maternal education has been shown by studies to improve the educational attainment, nutrition, and survival of their children.[@kingsley2017; @gibson2001] Educated mothers tend to have better employment opportunities and therefore, higher socioeconomic class which in turn improves the mother's access to health information and awareness of healthy behaviors.[@igbokwe2017a] Therefore, maternal education is a key determinant of child health. Studies have also shown that poverty is a root cause of other indirect measures such as limited access to food and education.[@gopalan2000] Rurality may also impact undernutrition through limited availability of and access to healthy foods because of poor infrastructure such as poor road networks. This is supported by several studies that have shown that undernutrition tends to be concentrated in rural areas.[@rnb2018; @senbanjo2013a; @oninla2007b] However, none of these studies to my knowledge have examined the regional differences in these factors as key determinants of the inequalities in the distribution of the burden of undernutrition.
+
+This study aims to (1) assess geographic region and the prevalence of undernutrition in Nigeria, (2) identify maternal factors associated with undernutrition in Nigeria, and (3) assess if geographic region modifies the effect of maternal factors on undernutrition in Nigeria.
+
+## Methods
+
+**Study Design**
+
+We analyzed the cross-sectional 2018 Nigerian Demographic and Health Survey (NDHS) data. The NDHS is a nationally representative household survey, in which households were interviewed by trained interviewers. Respondents were selected from all thirty-six states in Nigeria and the Federal Capital Territory (FCT) via a two-stage stratified cluster design. This survey was carried out in 1,389 clusters made up of 40,427 households. Data collected include indicators of fertility, reproductive health, maternal and child health, mortality, nutrition, and self-reported health behaviors among adults.
+
+**Sample**
+
+We used the child-recode data set of the NDHS, which includes 33,924 children aged 0 to 59 months as its unit of analysis. The child recode data set includes information on the child, the mother's pregnancy with the index child, postnatal care, as well as immunization, and health indices. Other maternal information such as gender norms and demographic information and anthropometric measures for each child are also included. Children between 0 and 59 months were chosen because they are most at risk of undernutrition and its attendant consequences. Children who were dead at the time of the survey were excluded (n = 3,211) as were children with missing data on the variables of interest (weight for age, height for age, weight for height, child's age in months, sex of the child, mother's education, mother's employment, household wealth index, place of residence; n= 19,243). The final analytic sample size was 11,470.
+
+**Measures**
+
+The outcome variables are weight for age dichotomized into underweight and not underweight, height for age dichotomized into stunted and not stunted, and weight for height dichotomized into wasted and not wasted. The variables were dichotomized using z-scores, which measure the number of standard deviations above or below the mean. Those children whose z-scores put them 2 or more standard deviations below the mean for age were classified as underweight, stunted, or wasted. Predictor variables are measures of maternal social deprivation which include: 1) Mother's education operationalized as "mother's highest education level" = No education, primary, secondary, or higher; 2) Mother's employment status operationalized as "respondent worked in the last 12 months?"= No, In the past year, currently working, and have a job but on leave in the past 7 days. This was recoded as 'Not employed' for those who answered 'No' or 'In the past year' and as 'Employed' for those mothers who responded either 'currently working' or 'have a job but on leave in the past 7 days; 3) Wealth index = poorest, poorer, middle, richer, and richest; 4) Residence (rural or urban residence). The confounders adjusted for were the age and sex of the child.
+
+Children's heights were recorded using stadiometers and their weights were measured using standard age-appropriate weighing scales respectively. The other variables were collected by questionnaire.
+
+**Data Analysis**
+
+Data analysis was conducted in R version 4.0.3. A detailed descriptive statistics table was provided examining the characteristics of the study population such as age, sex, urban/rural residence, mother's education, mother's employment status, and wealth index expressed as percentages. We explored differences in these characteristics by region (North vs. South) using chi-squared tests. We used logistic regression to compute odds ratios to examine the association between each index of undernutrition and geographical region adjusting for the age and sex of the child. A multivariate logistic model was then used to determine the association between maternal social deprivation factors and undernutrition. Another logistic regression model was used to examine the association between maternal social deprivation factors and undernutrition stratified by region. The possibility of effect modification by age and sex on indices of undernutrition was explored but no interaction was found for sex and was not reported in the results.
+
+The original study's survey procedure and instruments used in data collection received ethical approval from the National Ethics Committee of the Federal Ministry of Health of Nigeria and the Ethics Committee of the Opinion Research Corporation Macro International, Inc. (ORC Macro Inc., Calverton, MD, USA).
+
+### Result
+
+#### Descriptive Statistics
+
+The median age of children in the study was 28 months (Table 1). Gender was distributed equally among the participants as 49.3% of the children were females while 50.7% were males. A majority, 6855 (59.8%) of the children, lived in the North and 4615 (40.2%) lived in the South. A larger number of participants resided in rural (61.1%) compared with urban areas (37.1 %). Many of the mothers of the children in the study had no formal education (38.2%) and 16.8% had only a primary level of education. 20.1% of the children were from homes with a poorer wealth index and 19.9% were from the poorest households. Of all the children sampled, 21.9% were underweight, 36% were stunted, and 6.8% were wasted.
+
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+#table1(~agemo + sex + residence + education + hseholdno + children_5 + wealth_index + employment + wt4age + ht4age + wt4ht|region, overall = "total", dhs_new,
+#       caption = "Table 2: Characteristics of Study Participants by Region")
+
+# Create a function to compute the p-value for continuous or categorical variables.
+
+label(dhs_new$agemo) <- "Age of child in months"
+label(dhs_new$sex) <- "Sex of child"
+label(dhs_new$region) <- "Region of Nigeria"
+label(dhs_new$residence) <- "Rural or urban residence"
+label(dhs_new$education) <- "Level of education of mother"
+label(dhs_new$hseholdno) <- "Number of persons in the household"
+label(dhs_new$children_5) <- "Number of children under 5 in the household"
+label(dhs_new$wealth_index) <- "Household wealth index"
+label(dhs_new$employment) <- "Mother's employment status"
+label(dhs_new$wt4age) <- "Child's weight for age"
+label(dhs_new$ht4age) <- "Child's height for age"
+label(dhs_new$wt4ht) <- "Child's weight for height"
+
+pvalue <- function(x, ...) {
+    # Construct vectors of data y, and groups (strata) g
+    y <- unlist(x)
+    g <- factor(rep(1:length(x), times=sapply(x, length)))
+    if (is.numeric(y)) {
+        # For numeric variables, perform a standard 2-sample t-test
+        p <- t.test(y ~ g)$p.value
+    } else {
+        # For categorical variables, perform a chi-squared test of independence
+        p <- chisq.test(table(y, g))$p.value
+    }
+    # Format the p-value, using an HTML entity for the less-than sign.
+    # The initial empty string places the output on the line below the variable label.
+    c("", sub("<", "&lt;", format.pval(p, digits=3, eps=0.001)))
+}
+
+#Supply our function in the extra.col list argument to table1 with the name P-value, which will appear as the column label (heading).
+
+table1(~ agemo + sex + residence + education + hseholdno + children_5 + wealth_index + employment + wt4age + ht4age + wt4ht|region, render.continuous = c(. = "Median (IQR)"),
+    data=dhs_new, overall= "Total", caption = "Table 1: Demographic and nutrition-related characteristics of 11,470 children by region of Nigeria (NDHS, 2018)")
+```
+
+Compared to children in the South, children in the North were more likely to reside in rural areas (Table 1), have mothers with no formal education, have mothers who were unemployed, and be from households with poorer or poorest wealth index. Children in the North were also more likely to be underweight, stunted, and wasted than children in the South. 
+
+#### Region and Undernutrition
+
+The odds of being underweight, stunted or wasted were 2.80 (OR = 2.80; 95 % CI 2.53. 3.10; p \<0.001), 3.09 (OR = 3.09; 95 % CI 2.84, 3.37; p \<0.001), and 1.91 (OR = 1·91; 95 % CI 1.62, 2.28; p \<0.001) times higher respectively in children living in the North compared to children in the South. 
+
+#### Association Between Maternal Social Deprivation Factors And Undernutrition
+
+Table 2 shows the association between region and measures of maternal social deprivation on indices of undernutrition after adjusting for age and sex of the child.
+
+**Table 2: Maternal Social Deprivation and Undernutrition in Children in North and South Nigeria (NDHS 2018, n =11,470)**
+
++------------------+--------------------+---------+--------------------+----------+--------------------+----------+
+|                  | Wasting            |         | Stunting           |          | Underweight        |          |
++==================+====================+=========+====================+==========+====================+==========+
+| Characteristic   | OR (95% CI)        | P-value | OR (95% CI)        | P-value  | OR (95% CI)        | P-value  |
++------------------+--------------------+---------+--------------------+----------+--------------------+----------+
+| Region:          |                    |         |                    |          |                    |          |
++------------------+--------------------+---------+--------------------+----------+--------------------+----------+
+| North            | 1.30 (1.06 - 1.61) | 0.017   | 1.66 (1.49 - 1.85) | \< 0.001 | 1.38 (1.21 - 1.57) | \<0.001  |
+|                  |                    |         |                    |          |                    |          |
+| South            | Ref.               | Ref.    | Ref.               | Ref      | Ref                | Ref      |
++------------------+--------------------+---------+--------------------+----------+--------------------+----------+
+| Residence:       |                    |         |                    |          |                    |          |
++------------------+--------------------+---------+--------------------+----------+--------------------+----------+
+| Rural            | 1.05 (0.86 - 1.27) | 0.556   | 1.02 (0.92 - 1.12) | 0.850    | 1.05 (0.93 - 1.18) | 0.437    |
+|                  |                    |         |                    |          |                    |          |
+| Urban            | Ref.               | Ref.    | Ref.               | Ref      | Ref                | Ref      |
++------------------+--------------------+---------+--------------------+----------+--------------------+----------+
+| Education:       |                    |         |                    |          |                    |          |
++------------------+--------------------+---------+--------------------+----------+--------------------+----------+
+| No Education     | 1.53 (1.05 - 2.26) | 0.031   | 3.20 (2.58 - 4.00) | \< 0.001 | 2.81 (2.18 - 3.66) | \< 0.001 |
+|                  |                    |         |                    |          |                    |          |
+| Primary          | 0.95 (0.64 - 1.43) | 0.843   | 2.31 (1.85 - 2.89) | \< 0.001 | 1.55 (1.19 - 2.04) | \< 0.001 |
+|                  |                    |         |                    |          |                    |          |
+| Secondary        | 1.02 (0.72 - 1.47) | 0.858   | 1.64 (1.34 - 2.02) | \< 0.001 | 1.33 (1.04 - 1.70) | 0.022    |
+|                  |                    |         |                    |          |                    |          |
+| Higher education | Ref                | Ref     | Ref                | Ref      | Ref                | Ref      |
++------------------+--------------------+---------+--------------------+----------+--------------------+----------+
+| Wealth Index:    |                    |         |                    |          |                    |          |
++------------------+--------------------+---------+--------------------+----------+--------------------+----------+
+| Poorest          | 1.76 (1.24 - 2.51) | 0.002   | 2.46 (2.03 - 2.97) | \< 0.001 | 2.09 (1.68 - 2.62) | \< 0.001 |
+|                  |                    |         |                    |          |                    |          |
+| Poorer           | 1.33 (0.95 - 1.89) | 0.107   | 2.17 (1.81 - 2.60) | \< 0.001 | 1.70 (1.37 - 2.10) | \< 0.001 |
+|                  |                    |         |                    |          |                    |          |
+| Middle           | 1.37 (1.00 - 1.90) | 0.051   | 1.83 (1.55 - 2.16) | \< 0.001 | 1.51 (1.24 - 1.86) | \< 0.001 |
+|                  |                    |         |                    |          |                    |          |
+| Richer           | 1.17 (0.86 - 1.59) | 0.379   | 1.32 (1.12 - 1.56) | 0.001    | 1.19 (0.98 - 1.46) | 0.081    |
+|                  |                    |         |                    |          |                    |          |
+| Richest          | Ref                | Ref     | Ref                | Ref      | Ref                | Ref      |
++------------------+--------------------+---------+--------------------+----------+--------------------+----------+
+| Employment:      |                    |         |                    |          |                    |          |
++------------------+--------------------+---------+--------------------+----------+--------------------+----------+
+| Not Employed     | 0.91 (0.77 - 1.07) | 0.248   | 1.04 (0.93 - 1.11) | 0.783    | 1.11 (1.00 - 1.23) | 0.040    |
+|                  |                    |         |                    |          |                    |          |
+| Employed         | Ref                | Ref     | Ref                | Ref      | Ref                | Ref      |
++------------------+--------------------+---------+--------------------+----------+--------------------+----------+
+
+Children living in the North had 38% (aOR = 1·38; 95 % CI 1·21, 1·57; p \<0.001), 66% (aOR = 1·66; 95 % CI 1·49, 1·85; p \<0.001), and 30% (aOR = 1·30; 95 % CI 1·06, 1·61; p =0.017) higher odds of being underweight, stunted, and wasted respectively compared to children in the South after accounting for differences in maternal deprivation factors and age and sex of the child. Urban or rural place of residence had no statistically significant relationship with undernutrition.
+
+Factors that increased the odds of being underweight were having a mother without formal education (aOR = 2.81; 95 % CI 2.18, 3.66; p \<0.001), or with primary (aOR = 1·55; 95 % CI 1·19, 2.04; p \<0.001) or secondary education (aOR = 1·33; 95 % CI 1.04, 1.70; p =0.022) only; unemployed mother (aOR = 1·11; 95 % CI 1·00, 1·23; p =0.040), and being from a poorest (aOR = 2.09; 95 % CI 1.68, 2.62; p \<0.001), poorer (aOR = 1·70; 95 % CI 1.37, 2.10; p \<0.001), or middle (aOR = 1·51; 95 % CI 1·24, 1·86; p \<0.001) wealth index household.
+
+Factors that increased the odds of being stunted were having a mother without formal education (aOR = 3.20; 95 % CI 2.58, 4.00; p \<0.001), or with primary (aOR = 2.31; 95 % CI 1·85, 2.89; p \<0.001) or secondary education (aOR = 1·64; 95 % CI 1.34, 2.02; p \<0.001) only; and being from a poorest (aOR = 2.46; 95 % CI 2.03, 2.97; p \<0.001), poorer (aOR = 2.17; 95 % CI 1.81, 2.60; p \<0.001), middle (aOR = 1·83; 95 % CI 1·55, 2.16; p \<0.001), or richer (aOR = 1.32; 95 % CI 1.12, 1.56; p =0.001) wealth index household.
+
+Children who were from the poorest wealth index households had 76% higher odds of being wasted than children from the richest households (aOR = 1·76; 95 % CI 1.24, 2.51; p =0.002). Children whose mothers had no formal education had 53% (aOR = 1.53; 95 % CI 1.05, 2.26; p =0.031) higher odds of being wasted than children whose mothers had higher education.
+
+#### Association Between Maternal Deprivation Factors And Undernutrition by Region
+
+There was no significant difference in maternal deprivation factors by region for wasting. All factors were not statistically significant predictors of wasting in the South. In the North, only the wealth index (poorest, poorer, and middle) achieved statistical significance. In the North, the odds of wasting for children in the poorest, poorer, and middle wealth index households were 2.75 (OR = 2.75; 95 % CI 1·58, 5.00; p =0.001), 2.03 (OR = 2.03; 95 % CI 1·17, 3.68; p =0.015), and 2.12 (OR = 2.12; 95 % CI 1.24, 3.76; p =0.008) times higher respectively than for children from the richest households.
+
+**Table 3: The association between Maternal Deprivation Factors and Stunting by Region** (NDHS 2018, n=11,470)
+
++------------------+-------------------+-------------+--------------------+-------------+
+|                  | North             |             | South              |             |
++==================+===================+=============+====================+=============+
+| Predictor        | OR (95% CI)       | p- values   | OR (95% CI)        | p- values   |
++------------------+-------------------+-------------+--------------------+-------------+
+| Residence:       |                   |             |                    |             |
++------------------+-------------------+-------------+--------------------+-------------+
+| Rural            | 1.01 (0.88, 1.17) | 0.845       | 0.99 (0.85, 1.15)  | 0.893       |
+|                  |                   |             |                    |             |
+| Urban            | Ref               | Ref         | Ref                | Ref         |
++------------------+-------------------+-------------+--------------------+-------------+
+| Education:       |                   |             |                    |             |
++------------------+-------------------+-------------+--------------------+-------------+
+| No Education     | 3.2 (2.36, 4.39)  | \<0.001     | 2.94 (2.03, 4.27)  | \<0.001     |
+|                  |                   |             |                    |             |
+| Primary          | 2.49 (1.81, 3.46) | \<0.001     | 2.14 (1.58, 2.91)  | \<0.001     |
+|                  |                   |             |                    |             |
+| Secondary        | 1.53 (1.12, 2.1)  | 0.007       | 1.7 (1.30, 2.23)   | \<0.001     |
+|                  |                   |             |                    |             |
+| Higher Education | Ref               | Ref         | Ref                | Ref         |
++------------------+-------------------+-------------+--------------------+-------------+
+| Wealth Index:    |                   |             |                    |             |
++------------------+-------------------+-------------+--------------------+-------------+
+| Poorest          | 2.57 (1.95, 3.39) | \<0.001     | 1.96 (1.35, 2.83)  | \<0.001     |
+|                  |                   |             |                    |             |
+| Poorer           | 2.32 (1.77, 3.05) | \<0.001     | 1.85 (1.40, 2.43)  | \<0.001     |
+|                  |                   |             |                    |             |
+| Middle           | 1.78 (1.37, 2.32) | \<0.001     | 2.02 (1.62, 2.52)  | \<0.001     |
+|                  |                   |             |                    |             |
+| Richer           | 1.29 (0.99, 1.68) | 0.062       | 1.38 (1.12, 1.70)  | 0.003       |
+|                  |                   |             |                    |             |
+| Richest          | Ref               | Ref         | Ref                | Ref         |
++------------------+-------------------+-------------+--------------------+-------------+
+| Employment:      |                   |             |                    |             |
++------------------+-------------------+-------------+--------------------+-------------+
+| Not employed     | 1.05 (0.95, 1.17) | 0.323       | 0.85 (0.70 - 1.04) | 0.118       |
+|                  |                   |             |                    |             |
+| Employed         | Ref               | Ref         | Ref                | Ref         |
++------------------+-------------------+-------------+--------------------+-------------+
+
+Table 6 shows the association between maternal deprivation factors and stunting stratified by region (North and South). Compared to children with mothers who had a higher education, the odds of stunting in children whose mothers had only primary and secondary education were 2.49 (OR = 2.49; 95% CI 1.81, 3.46; p \<0.001) and 1.53 (OR = 1.53; 95% CI 1.12, 2.1; p =0.007) times higher respectively in the North; and 2.14 (OR = 2.14; 95% CI 1.58, 2.91; p \<0.001) and 1.7 (OR = 1.7; 95% CI 1.30, 2.23; p \<0.001) times higher respectively in the South. There were similar odds of stunting among children whose mothers had no formal education in the North and South (OR = 3.2; 95% CI 2.58, 4.00; p \<0.001) and (OR = 2.94, 95% CI 2.03, 4.27; p \<0.001). In the North, children from the poorest, poorer, and middle-class households had 2.57 (OR = 2.57; 95% CI 1.95, 3.39; p \<0.001), 2.32 (OR = 2.32; 95% CI 1.77, 3.05; p \<0.001), and 1.78 (OR = 1.78; 95% CI 1.37, 2.32; p \<0.001) times greater odds respectively of stunting than those from the richest households. In the South however, the odds of stunting for children in similar households were 1.96 (OR = 1.96; 95% CI 1.35, 2.83; p \<0.001), 1.85 (OR = 1.85; 95% CI 1.40, 2.43; p \<0.001), and 2.02 (OR = 2.02; 95% CI 1.62, 2.52; p \<0.001) times greater respectively than for children from the richest households.
+
+**Table 4: The association between Maternal Deprivation Factors and Underweight by Region** (NDHS 2018, n=11,470)
+
++------------------+-------------------+-------------+--------------------+-------------+
+|                  | North             |             | South              |             |
++==================+===================+=============+====================+=============+
+| Predictor        | OR (95% CI)       | p- values   | OR (95% CI)        | p- values   |
++------------------+-------------------+-------------+--------------------+-------------+
+| Residence:       |                   |             |                    |             |
++------------------+-------------------+-------------+--------------------+-------------+
+| Rural            | 1.1 (0.94, 1.29)  | 0.220       | 0.95 (0.79, 1.15)  | 0.613       |
+|                  |                   |             |                    |             |
+| Urban            | Ref               | Ref         | Ref                | Ref         |
++------------------+-------------------+-------------+--------------------+-------------+
+| Education:       |                   |             |                    |             |
++------------------+-------------------+-------------+--------------------+-------------+
+| No Education     | 2.66 (1.86, 3.89) | \<0.001     | 2.47 (1.59, 3.86)  | \<0.001     |
+|                  |                   |             |                    |             |
+| Primary          | 1.56 (1.07, 2.32) | 0.024       | 1.51 (1.04, 2.2)   | 0.032       |
+|                  |                   |             |                    |             |
+| Secondary        | 1.12 (0.78, 1.65) | 0.547       | 1.48 (1.08, 2.06)  | 0.018       |
+|                  |                   |             |                    |             |
+| Higher Education | Ref               | Ref         | Ref                | Ref         |
++------------------+-------------------+-------------+--------------------+-------------+
+| Wealth Index:    |                   |             |                    |             |
++------------------+-------------------+-------------+--------------------+-------------+
+| Poorest          | 2.06 (1.49, 2.86) | \<0.001     | 1.71 (1.08, 2.66)  | 0.019       |
+|                  |                   |             |                    |             |
+| Poorer           | 1.71 (1.25, 2.38) | 0.001       | 1.46 (1.03, 2.06)  | 0.032       |
+|                  |                   |             |                    |             |
+| Middle           | 1.41 (1.03, 1.94) | 0.033       | 1.79 (1.37, 2.35)  | \<0.001     |
+|                  |                   |             |                    |             |
+| Richer           | 1.17 (0.85, 1.62) | 0.332       | 1.24 (0.96, 1.61)  | 0.095       |
+|                  |                   |             |                    |             |
+| Richest          | Ref               | Ref         | Ref                | Ref         |
++------------------+-------------------+-------------+--------------------+-------------+
+| Employment:      |                   |             |                    |             |
++------------------+-------------------+-------------+--------------------+-------------+
+| Not employed     | 1.14 (1.02, 1.28) | 0.018       | 0.91 (0.72 - 1.15) | 0.454       |
+|                  |                   |             |                    |             |
+| Employed         | Ref               | Ref         | Ref                | Ref         |
++------------------+-------------------+-------------+--------------------+-------------+
+
+Table 7 shows the association between maternal deprivation factors and underweight stratified by region (North and South). Factors that increased the odds of being underweight were having a mother without formal education (aOR = 2.66; 95 % CI 1.86, 3.89; p \<0.001), or with primary education only (aOR = 1·56; 95 % CI 1.07, 2.32; p =0.024); maternal unemployment in the North (OR = 1.14; 95% CI 1.02, 1.28; p =0.018), and children from the poorest, poorer, and middle class households. Compared to children from the richest homes, those from the poorest, poorer, and middle income homes had 2.06 (OR = 2.06; 95% CI 1.49, 2.86; p \<0.001), 1.71 (OR = 1.71; 95% CI 1.25, 2.38; p =0.001), and 1.41(OR = 1.41; 95% CI 1.03, 1.94; p =0.033) times greater odds respectively of underweight in the North and 1.71 (OR = 1.71; 95% CI 1.08, 2.66; p =0.019), 1.46 (OR = 1.46; 95% CI 1.03, 2.06; p =0.032), and 1.79 (OR = 1.79; 95% CI 1.37, 2.35; p \<0.001) times greater odds of underweight in the South. In the South, the association between employment and underweight was not significant (OR = 0.91; 95% CI 0.72, 1.15; p =0.454)
+
+## Discussion
+
+### Summary of Results
+
+This study examines the effects of living in the North vs. living in the South on undernutrition, the difference in maternal social deprivation factors by region, and the influence of these factors on undernutrition in children under 5 years in Nigeria. The study shows evidence that living in the North increases a child's odds of being undernourished compared to living in the South. This association was modified by age of the child, with children between 2 and 5 years having greater odds of undernutrition than children below 2 years. However, this regional difference in the distribution of undernutrition can be explained partly by the differences in maternal deprivation in both regions. Results show that maternal social deprivation factors are more prevalent in the North. Children from the North were more likely to reside in rural areas, have mothers with no formal education, mothers who were unemployed, or be from poor households. This study also shows that maternal social deprivation is associated with undernutrition in children. All the indices of maternal deprivation except rural residence significantly increased the odds that a child is undernourished. Across all 3 indices of undernutrition, the most consistent factors affecting childhood undernutrition were the mother's education (no formal education) and wealth index (poorest households). There was a reduced likelihood of undernutrition with each higher level of education. Children whose mothers had a lower level of education were more likely to be undernourished than children of mothers with a higher level of education. The odds of being undernourished also increased as the wealth index reduced. These factors were modified by region. The odds of being underweight or stunted across most measures were higher for the North than the South. Unemployment was not a significant predictor of underweight status in the South but raised the odds in the North by 14%. The study shows that these factors differ across regions with children in the North having mothers who are more socially deprived than those in the South.
+
+### Significance of Results
+
+There are disparities in the nutritional status of children across regions and these disparities affect mostly those who are from the poorest households and the uneducated. These disparities in undernutrition by region could be explained by the significant differences in maternal social deprivation between the North and the South. Poverty, lack of education, and unemployment were more prevalent among mothers in the North compared to the South. Parents who are poor may not be able to afford nutritious food for their children. Poverty may lead to undernutrition through the lack of adequate food, exposure to infections, and poor access to health care services.[@nandy2005; @manyong2021] Likewise, uneducated parents may not be able to make informed decisions regarding the provision of nutritious foods from available food options. Also, parents who are educated are more likely to be be gainfully employed and financially empowered.[@igbokwe2017c] Educated parents are also more likely to have access to information to make healthy food decisions for their children and allocate the household income and food resources to favor children.[@igbokwe2017b]
+
+The higher burden of undernutrition in the North compared to the South may also be due to the growing security issues in the northern part of Nigeria which has led to an economic decline and increase in rates of poverty.[@worldbankgroup2015] Cultural practices and beliefs may also have a bearing on the burden of undernutrition. For instance, some homes may have intra-familial food allocation practices that favor adults over children, and this may be rooted in culture.[@mock1994] These practices may prohibit children from eating some foods which they ideally require to have a balanced diet.[@oninla2007c] Cultural practices may also determine the timing of, and type of foods introduced at weaning.[@n2019e] The difference in odds of undernutrition by age groups may be explained by a shift in focus and attention from an older child by a mother, after the birth of a younger sibling, leaving the older child relatively neglected.[@oninla2007d]
+
+Findings from the present study are consistent with other studies that have found associations between maternal deprivation and undernutrition.[@akombi2017a; @fotso2005; @hasan2020; @n2019f; @senbanjo2013b] However, unlike some other studies, this present study found no association between rural residence and undernutrition.[@senbanjo2013c; @imam2021; @oninla2007e] The finding of increased odds of undernutrition in children between 2 to 5 years compared to children less than 2 years is unexpected as several studies have shown and focused on the higher burden in those less than 2 years.[@imam2021a; @akombi2019a] However, Oninla et al also demonstrated an increased risk of undernutrition with increasing age in their study.[@oninla2007f]
+
+Another study conducted in Bangladesh also found geographical disparities in undernutrition and in the distribution of maternal deprivation factors like poor education and poverty.[@hasan2020a] This highlights the social divide between the rich and the poor and how this may have adverse consequences on the health of children.
+
+### Policy And Practice Implications
+
+The findings in this study underscore the importance of policies aimed at reducing undernutrition to target mothers as well as children. Such policies should aim at improving maternal deprivation factors as well as empowering women financially and should focus on the most vulnerable groups such as households with low income and low educational achievement. There is a need to close the economic gap between regions in Nigeria. This can be done by redistributing resources and spreading development to the poorest areas. Infrastructural development and reduced taxation on industries located in these areas may encourage the migration of other companies to these areas, which will help improve the economic outlook of these areas and empower their residents. It is also imperative that programs to reduce undernutrition are tailored to regions rather than a one-size-fits-all national program that may not take into cognizance the peculiarities of the region in which it is being implemented.
+
+The implications for practice are those of planning and implementing programs targeted at undernutrition which should consider maternal literacy and family income in the design of food programs. Food programs should also teach in an easily understandable manner, how to access the most nutritious foods on a limited budget. It is also important to provide integrated health care with collaborations between clinical and public health professionals. Diagnosis of malnutrition in primary care facilities- where growth monitoring first highlights this issue and subsequent treatment should be followed by referral to appropriate community services to ensure that both children and their parents receive necessary aid to mitigate risk and subsequent relapse. Increased odds of undernutrition in children between ages 2 to 5 years have implications for focusing programs on this age group. Since most children in Nigeria begin schooling at age of 2-3 years, school-based food programs may be targeted at this age group with success.
+
+### Limitations And Strengths
+
+There are a few drawbacks to this study. First, the cross-sectional nature of this study does not permit making a causal inference. Secondly, wealth was not measured directly but was estimated using a proxy. This is because wealth is often difficult to measure in developing countries like Nigeria due to improper documentation of income and expenditure. Therefore, the use of a proxy measure like assets is often sufficient to estimate wealth.
+
+Despite these limitations, the study has some notable strengths including the large sample size which would increase the power of the study and enable the generalization of the study results to the entire population. Also, this study is useful in highlighting the huge disparities in maternal factors between regions and identifying the most important factors affecting childhood undernutrition.
+
+### Conclusions
+
+This study confirms the role of maternal deprivation in childhood undernutrition. It also confirms that there are significant differences in maternal factors between the Northern parts of Nigeria and Southern Nigeria and these differences may be responsible for the differences in the prevalence of undernutrition between the two regions. Policies and programs targeted toward the improvement of childhood undernutrition should be community-centered and focus on mitigating these inequalities. Investing in maternal education, employment, and financial empowerment may be instrumental in reducing the rates of childhood undernutrition in areas deemed most at risk. The government should also be encouraged to tighten security in the North which will allow economic improvement and alleviate poverty. Programs currently being implemented in the North to address undernutrition should be evaluated to measure impact as well as to determine possible areas of modification and improvement. Programs that have been evaluated for their effectiveness in the South should also be adapted for implementation in the North if these programs have been shown to reduce the burden of undernutrition in the South. Future directions for research include assessing the role of environmental factors like inadequate water and sanitation, diarrhea, and other infections in childhood in the regional differences in undernutrition in Nigeria. This is necessary for the focusing of community-based interventions according to the region of need.
+
+## Bibliography
